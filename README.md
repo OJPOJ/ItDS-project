@@ -22,9 +22,9 @@ Handle the 'death' column, interpreting the values accordingly (converting to in
 Next, split the unique subjects into training and testing sets, moreover handle the 'death' column, interpreting the values accordingly (converting to integer type) to reflect whether a patient has died.
 In order to handling imbalanced classes, we used SMOTEENN, a combination of over-sampling and under-sampling techniques to address class imbalance.
 For feature selection, we also set up a Logistic Regression estimator and potentially other estimators (SVC, Naive Bayes) for Recursive Feature Elimination with Cross-Validation (RFECV) and SelectKBest
-Finally, Model Training and Model Evaluation.
+Finally, Model Training and Model Evaluation.(2_SHAO_edited.ipynb) also tried the similar way but with RandomForest Regression.
 
-2.Cox Proportional Hazards Model with Logistic Regression(_COX_Model_SHAOCI(FINAL VERSION_visual Chart) Group-F2):
+2.(_COX_Model_SHAOCI(FINAL VERSION_visual Chart) Group-F2):
 A new column 'CATEGORY' is created by splitting 'DEFINITION_ID' and keeping only the prefix( condition,	drug,	measurement,	observation,	procedure), next, counts of each category by 'SUBJECT_ID' are calculated, which will use for further analysis and feature engineering.
 Survival Analysis(Create and drop Column)
 Time-to-Event Calculation: The maximum time for each subject is determined, representing the time to event or censoring.
